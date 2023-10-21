@@ -44,6 +44,8 @@ Contenido:
 
 ## Google Cloud SDK
 
+### Instalación de CLI
+
 Para seguir los capítulos del libro prefiero utilizar el SDK, para lo cual es necesario instalarlo y habilitarlo dentro de VSCode con PowerShell. Sigue los siguientes pasos de instalación:
 
 Pre-requisitos:
@@ -82,3 +84,12 @@ gcloud init
 ```powershell
 gcloud auth list
 ```
+
+### Habilitar funciones de VSCode
+
+Instrucciones más detalladas se encuentran en la [documentación](https://cloud.google.com/code/docs/vscode/install) para la instalación y aprovisionamiento de VS Code.
+
+1) Abre una sesión de VS Code.
+2) Busca e instala el paquete `Google Cloud Code` en las extensiones de VSCode.
+3) Reinicio la sesión de VS Code una vez que termine la instalación.
+4) Inicia sesión con tu cuenta de GCP dentro del paquete de VS Code.
