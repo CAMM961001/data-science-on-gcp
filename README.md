@@ -78,7 +78,7 @@ En general, los pasos aquí descritos se pueden encontrar en la [documentación]
 gcloud init
 ```
 
-7) Configura la sesión del SDK proporcionando tus credenciales de GCP así los permisos correspondientes.
+7) Configura la sesión del SDK proporcionando tus credenciales de GCP así como los permisos correspondientes.
 8) Cierra la sesión de SDK y verifica que puedes usar los comandos del SDK ejecutando en una terminal de PowerShell el comando:
 
 ```powershell
@@ -91,5 +91,5 @@ Instrucciones más detalladas se encuentran en la [documentación](https://cloud
 
 1) Abre una sesión de VS Code.
 2) Busca e instala el paquete `Google Cloud Code` en las extensiones de VSCode.
-3) Reinicio la sesión de VS Code una vez que termine la instalación.
+3) Reinicia la sesión de VS Code una vez que termine la instalación.
 4) Inicia sesión con tu cuenta de GCP dentro del paquete de VS Code.
