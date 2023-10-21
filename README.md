@@ -34,3 +34,51 @@ If you still have problems, please leave feedback in Qwiklabs, or file an issue 
 
 ### Updates to book
 I updated the book in Nov 2019 with TensorFlow 2.0, Cloud Functions, and BigQuery ML.
+
+---
+
+# Notas personales
+
+Contenido:
+* [Google Cloud SDK](#google-cloud-sdk)
+
+## Google Cloud SDK
+
+Para seguir los capítulos del libro prefiero utilizar el SDK, para lo cual es necesario instalarlo y habilitarlo dentro de VSCode con PowerShell. Sigue los siguientes pasos de instalación:
+
+Pre-requisitos:
+
+* Tener Visual Studio Code instalado
+* Tener Git instalado y habilitado
+
+Pasos de instalación de Google Cloud SDK en PowerShell:
+
+En general, los pasos aquí descritos se pueden encontrar en la [documentación](https://cloud.google.com/sdk/docs/install).
+
+1) Abre un terminal de PowerShell
+2) Descarga el instalador con el comando:
+
+```powershell
+(New-Object Net.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe","$env:Temp\GoogleCloudSDKInstaller.exe")
+```
+
+3) Ejecuta el instalador con el comando:
+
+```powershell
+& $env:Temp\GoogleCloudSDKInstaller.exe    
+```
+
+4) Estas acciones abriran un Wizard con el instalador de Google CLoud SDK.
+5) Continúa con las opciones por defecto del Wizard hasta que concluya la instalación.
+6) Una vez concluida la instalación se ejecutará por defecto una sesión de SDK con el comando:
+
+```powershell
+gcloud init
+```
+
+7) Configura la sesión del SDK proporcionando tus credenciales de GCP así los permisos correspondientes.
+8) Cierra la sesión de SDK y verifica que puedes usar los comandos del SDK ejecutando en una terminal de PowerShell el comando:
+
+```powershell
+gcloud auth list
+```
