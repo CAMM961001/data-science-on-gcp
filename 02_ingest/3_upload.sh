@@ -2,7 +2,7 @@
 
 # Mensaje de uso en caso de faltar argumentos
 if [ "$#" -ne 1 ]; then
-    echo "Usage: ./3_upload.sh  [BUCKET]"
+    echo "Usage: ./3_upload.sh [BUCKET]"
     exit
 fi
 
