@@ -13,7 +13,7 @@ do
     do
         # Armar URL de descarga
         FILE=On_Time_Reporting_Carrier_On_Time_Performance_1987_present_${YEAR}_${MONTH}.zip
-        # GET UTR y almacenar
+        # Extraer contenido de URL (GET) y almacenar
         curl -k -o ${OUTDIR}/${FILE} ${SOURCE}/${FILE}
     done
 done
