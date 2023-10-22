@@ -2,7 +2,7 @@
 
 # Mensaje de uso en caso de faltar argumentos
 if [ "$#" -ne 1 ]; then
-    echo "Usage: ./ingest.sh  [BUCKET]"
+    echo "Usage: ./5_ingest.sh  [BUCKET]"
     exit
 fi
 

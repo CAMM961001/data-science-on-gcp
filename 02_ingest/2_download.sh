@@ -6,7 +6,7 @@ SOURCE=https://storage.googleapis.com/data-science-on-gcp/edition2/raw
 
 # Mensaje de uso en caso de faltar argumentos
 if test "$#" -ne 2; then
-   echo "Usage: ./download.sh [YEAR] [MONTH]"
+   echo "Usage: ./2_download.sh [YEAR] [MONTH]"
    echo "   eg: ./download.sh 2015 1"
    exit
 fi
