@@ -19,17 +19,17 @@ MONTH2=$(printf "%02d" $MONTH)
 BASEURL="${SOURCE}/On_Time_Reporting_Carrier_On_Time_Performance_1987_present"
 echo -e "Downloading YEAR=$YEAR MONTH=$MONTH2 from:\n$BASEURL\n"
 
-# Directorio temporal para almacenar .zip
+# Declarar directorio temporal y archivo zip
 TMPDIR=$(mktemp -d)
 ZIPFILE=${TMPDIR}/${YEAR}_${MONTH2}.zip
 
-# Extraer URL a archivo comprimido
+# Extraer URL a archivo zip
 curl -o $ZIPFILE ${BASEURL}_${YEAR}_${MONTH}.zip
 
 # Descomprimir zip en directorio temporal
 unzip -d $TMPDIR $ZIPFILE
 
-# Mover archivo descomprimido a raíz
+# Mover archivos csv descomprimidos a directorio raíz
 mv $TMPDIR/*.csv ./${YEAR}${MONTH2}.csv
 
 # Eliminar directorio temporal
