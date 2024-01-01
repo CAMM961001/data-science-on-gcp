@@ -49,8 +49,9 @@ def download(year: str, month: str, destdir: str):
     """
     logging.info('Requesting data for {}-{}-*'.format(year, month))
 
-    url = os.path.join(SOURCE,
-                       "On_Time_Reporting_Carrier_On_Time_Performance_1987_present_{}_{}.zip".format(year, int(month)))
+    url = SOURCE
+    url += f"/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_{year}_{int(month)}.zip"
+    
     logging.debug("Trying to download {}".format(url))
 
     filename = os.path.join(destdir, "{}{}.zip".format(year, month))
